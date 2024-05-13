@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-12T10:54:17.053Z",
+    "end": "2024-05-12T10:54:19.481Z",
+    "duration": 2428,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c4d9ae85-c9c1-40f5-8cb6-62f377316e38",
+      "title": "",
+      "fullFile": "cypress\\e2e\\ebac_jobs\\home\\home.cy.js",
+      "file": "cypress\\e2e\\ebac_jobs\\home\\home.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "27d8453f-b422-4f34-9ecf-e80c9060152c",
+          "title": "Testes para a home",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deve renderizar 4 vagas",
+              "fullTitle": "Testes para a home Deve renderizar 4 vagas",
+              "timedOut": null,
+              "duration": 420,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".ListaVagas_vagas__gmNZn > li\").should('have.length', 4);",
+              "err": {},
+              "uuid": "1f5955df-b9f3-42ce-9920-6a4c61c29cae",
+              "parentUUID": "27d8453f-b422-4f34-9ecf-e80c9060152c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deve filtrar por fullstack",
+              "fullTitle": "Testes para a home Deve filtrar por fullstack",
+              "timedOut": null,
+              "duration": 984,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\".FormVagas_campo__E1ppF\").type(\"fullstack\");\ncy.get('button[type=\"submit\"]').click();\ncy.get(\".ListaVagas_vagas__gmNZn > li\").should('have.length', 1);\ncy.screenshot('teste');",
+              "err": {},
+              "uuid": "396dbff8-8b51-4c99-a007-79d2507a1dae",
+              "parentUUID": "27d8453f-b422-4f34-9ecf-e80c9060152c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1f5955df-b9f3-42ce-9920-6a4c61c29cae",
+            "396dbff8-8b51-4c99-a007-79d2507a1dae"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1404,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/relatorio",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "ddmmyyyy_HHMMSS"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
